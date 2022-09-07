@@ -1,223 +1,254 @@
 .App {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100vh;
-  font-family: 'Inter', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100vh;
+	font-family: 'Inter', sans-serif;
 }
 
 h1 {
-  margin: 10px;
+	margin: 10px;
 }
 
 h4 {
-  margin: 10px 20px;
+	margin: 10px 20px;
 }
 
 .heading {
-  margin: 0;
+	margin: 0;
 }
 
 p {
-  margin: 10px;
-  opacity: 0.7;
+	margin: 10px;
+	opacity: 0.7;
 }
 
 .header {
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  gap: 10px;
+	display: flex;
+	align-items: start;
+	justify-content: center;
+	gap: 10px;
 }
 
 .mainform {
-  width: 100%;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
+	width: 100%;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
 }
 
 .stepper {
-  margin: 80px 0;
+	margin: 80px 0;
 }
 
 .subform {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: start;
-  width: 55%;
-  gap: 5px;
-  margin-top: 50px;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: start;
+	gap: 5px;
+	margin-top: 50px;
 }
 
 .optional {
-  opacity: 0.5;
+	opacity: 0.5;
 }
 
 .ws-input {
-  display: flex;
-  width: 100%;
+	display: flex;
+	width: 100%;
 }
 
 .wsurl {
-  height: 56px;
-  background-color: #eaeaf0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0.5;
-  padding: 0 10px;
+	height: 56px;
+	background-color: #eaeaf0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0.5;
+	padding: 0 10px;
 }
 
 .Options {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  margin: 10px 0;
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	margin: 10px 0;
 }
 
 .option-card {
-  width: 190px;
-  display: flex;
-  flex-flow: column nowrap;
-  border: #eaeaf0 1px solid;
-  border-radius: 5px;
+	width: 190px;
+	display: flex;
+	flex-flow: column nowrap;
+	border: #eaeaf0 1px solid;
+	border-radius: 5px;
 }
 
 .option-card:focus {
-  border: #664DE5 1px solid;
+	border: #664DE5 1px solid;
 }
 
 .option-card:focus .icon {
-  color: #664DE5;
+	color: #664DE5;
 }
 
 .content {
-  text-align: start;
-  height: 130px;
-  line-height: 1.3;
+	text-align: start;
+	height: 130px;
+	line-height: 1.3;
 }
 
 .content p {
-  margin: 0 20px
+	margin: 0 20px
 }
 
 .icon-container {
-  height: 60px;
-  display: flex;
+	height: 60px;
+	display: flex;
 }
 
 .icon {
-  position: relative;
-  left: 20px;
-  top: 20px;
+	position: relative;
+	left: 20px;
+	top: 20px;
 }
 
 .check-circle {
-  height: 75px;
-  width: 75px;
-  background-color: #664DE5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  margin: 30px 0;
+	height: 75px;
+	width: 75px;
+	background-color: #664DE5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	margin: 30px 0;
 }
+
+
 
 
 @media (min-width:320px) {
 
-  /* smartphones, iPhone, portrait 480x320 phones */
-  .onboard {
-    width: 100%;
-  }
+	/* smartphones, iPhone, portrait 480x320 phones */
+	.onboard {
+		width: 100%;
+	}
 
-  .Options {
-    width: 95%;
-  }
+	.Options {
+		width: 95%;
+	}
 
-  .stepper {
-    width: 80%;
-  }
+	.subform,
+	.mainBtn,
+	.stepper {
+		width: 90%;
+	}
 }
 
 @media (min-width:481px) {
 
-  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-  .onboard {
-    width: 80%;
-  }
+	/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+	.onboard {
+		width: 80%;
+	}
 
-  .Options {
-    width: 80%;
-  }
+	.Options {
+		width: 80%;
+	}
+
+	.subform,
+	.mainBtn,
+	.stepper {
+		width: 90%;
+	}
 }
 
 @media (min-width:641px) {
 
-  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-  .onboard {
-    width: 70%;
-  }
+	/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+	.onboard {
+		width: 70%;
+	}
 
-  .Options {
-    width: 70%;
-  }
+	.Options {
+		width: 70%;
+	}
 
-  .stepper {
-    width: 70%;
-  }
+	.subform,
+	.mainBtn,
+	.stepper {
+		width: 70%;
+	}
 }
 
 @media (min-width:961px) {
 
-  /* tablet, landscape iPad, lo-res laptops ands desktops */
-  .onboard {
-    width: 50%;
-  }
+	/* tablet, landscape iPad, lo-res laptops ands desktops */
+	.onboard {
+		width: 50%;
+	}
 
-  .Options {
-    width: 80%;
-  }
+	.Options {
+		width: 80%;
+	}
+
+	.subform,
+	.mainBtn,
+	.stepper {
+		width: 70%;
+	}
 }
 
 @media (min-width:1025px) {
 
-  /* big landscape tablets, laptops, and desktops */
-  .onboard {
-    width: 40%;
-  }
+	/* big landscape tablets, laptops, and desktops */
+	.onboard {
+		width: 40%;
+	}
 
-  .Options {
-    width: 80%;
-  }
+	.Options {
+		width: 80%;
+	}
+
+	.subform,
+	.mainBtn,
+	.stepper {
+		width: 75%;
+	}
 }
 
 @media (min-width:1281px) {
 
-  /* hi-res laptops and desktops */
-  .onboard {
-    width: 40%;
-  }
+	/* hi-res laptops and desktops */
+	.onboard {
+		width: 40%;
+	}
 
-  .Options {
-    width: 70%;
-  }
+	.Options {
+		width: 70%;
+	}
+
+	.subform,
+	.mainBtn,
+	.stepper {
+		width: 60%;
+	}
 }
 
 @media (min-width:1525px) {
 
-  /* hi-res laptops and desktops */
-  .onboard {
-    width: 40%;
-  }
+	/* hi-res laptops and desktops */
+	.onboard {
+		width: 40%;
+	}
 
-  .Options {
-    width: 55%;
-  }
+	.Options {
+		width: 55%;
+	}
 
-  .stepper {
-    width: 55%;
-  }
+	.subform,
+	.mainBtn,
+	.stepper {
+		width: 55%;
+	}
 }

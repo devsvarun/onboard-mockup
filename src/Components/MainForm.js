@@ -36,7 +36,7 @@ const MainForm = (props) => {
 			<h1>{texts[index].heading}{index === 3 ? userName ?? "Eren" + "!" : ""}</h1>
 			<p>{texts[index].info}</p>
 			{index < 2 ? <SubForm index={index} userData={userData} setUserData={setUserData} /> : index < 3 ? <OptionCard setUserData={setUserData} /> : <></>}
-			<Button style={{ textTransform: 'none', width: "55%", minHeight: "56px", backgroundColor: "#664DE5", marginTop: "20px" }} onClick={handleNext} variant="contained">{texts[index].buttonText}</Button>
+			<Button className="mainBtn" style={{ textTransform: 'none', minHeight: "56px", backgroundColor: "#664DE5", marginTop: "20px" }} onClick={handleNext} variant="contained">{texts[index].buttonText}</Button>
 		</div>
 	)
 }
