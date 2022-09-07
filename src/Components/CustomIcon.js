@@ -17,7 +17,7 @@ const CustomIcon = (props) => {
         alignItems: 'center',
         ...(ownerState.completed && {
             backgroundColor: '#664DE5',
-            border: "unset",
+            border: "#664DE5 1px solid",
             color: "#fff"
         }),
     }));
