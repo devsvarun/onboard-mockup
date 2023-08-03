@@ -1,4 +1,4 @@
-Link: https://onboard-mockup.herokuapp.com/
+Link: https://devsvarun.github.io/onboard-mockup
 
 # Getting Started with Create React App
 
